@@ -1,0 +1,50 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+
+.header {
+  background: linear-gradient(89.89deg, #8b1490 0.44%, #47075e 99.81%);
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding-top: 45px;
+  color: #fff;
+  &::after {
+    content: "";
+    background-image: url(../images/h.svg);
+    position: absolute;
+    width: 529.99px;
+    height: 641.53px;
+    background-repeat: no-repeat;
+    right: -206px;
+    bottom: -108px;
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  &__tel {
+    font-family: 'Museo Sans Cyrl 700';
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 22px;
+  }
+  &__mail {
+    font-family: 'Museo Sans Cyrl 500';
+    font-size: 18px;
+    line-height: 22px;
+  }
+  &__info {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 585px;
+width: 100%;
+margin-left: 20px;
+  }
+}
