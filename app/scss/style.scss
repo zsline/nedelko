@@ -63,25 +63,63 @@
       margin-left: 16px;
     }
   }
-  &__inner{
-    margin-right: 40%;
+  &__inner {
+    max-width: 800px;
+    width: 100%;
     position: absolute;
     padding-top: 75px;
     z-index: 2;
   }
   &__title {
-    font-family: 'Museo Sans Cyrl 700';
+    font-family: "Museo Sans Cyrl 700";
     font-size: 42px;
     line-height: 50px;
     max-width: 792px;
     margin-bottom: 30px;
   }
-    &__subtitle {
-    font-family: 'Museo Sans Cyrl 300';
+  &__subtitle {
+    font-family: "Museo Sans Cyrl 300";
     font-size: 30px;
     line-height: 36px;
     max-width: 650px;
   }
+  &__btns {
+    display: flex;
+    justify-content: start;
+  }
+  &__btn {
+    font-family: "Museo Sans Cyrl 700";
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 120px;
+    position: relative;
+    &-text {
+      background-color: $accent;
+      padding: 20px 27px;
+      color: #46004f;
+    }
+    &-price {
+      position: absolute;
+      font-family: "Museo Sans Cyrl 900";
+      font-size: 21px;
+      top: -38px;
+      right: -80px;
+      width: 95px;
+      height: 95px;
+      background-color: $accent;
+      border: 6px solid #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+
+    }
+  }
+}
+.stamp{
+  padding-top: 50px;
+  margin: 0 auto;
 }
 .books-image {
   position: absolute;
